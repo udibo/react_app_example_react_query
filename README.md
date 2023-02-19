@@ -1,9 +1,17 @@
-# Example Udibo React App
+# Example Udibo React App with React query
 
-[![CI/CD](https://github.com/udibo/react_app_example/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/udibo/react_app_example/actions/workflows/main.yml)
-[![license](https://img.shields.io/github/license/udibo/react_app_example)](https://github.com/udibo/react_app_example/blob/main/LICENSE)
+[![CI/CD](https://github.com/udibo/react_app_example_react_query/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/udibo/react_app_example_react_query/actions/workflows/main.yml)
+[![license](https://img.shields.io/github/license/udibo/react_app_example_react_query)](https://github.com/udibo/react_app_example_react_query/blob/main/LICENSE)
 
-A basic example of a [Udibo React App](https://deno.land/x/udibo_react_app).
+A basic example of a [Udibo React App](https://deno.land/x/udibo_react_app)
+using [React Query](https://tanstack.com/query/latest) for asyncronous state
+management.
+
+To do this in your own project, copy the react query import from the
+`import_map.json`, copy `query.js` and use it to create your query clients, add
+a custom `Provider` to your hydrate options in `app.tsx`, add a custom
+`providerFactory` to your serve options in `main.tsx`, and update `deno.jsonc`
+to use `main.tsx` as your entry point.
 
 - [GitHub Repository](https://github.com/udibo/react_app/)
 - [Deno docs](https://deno.land/x/udibo_react_app)

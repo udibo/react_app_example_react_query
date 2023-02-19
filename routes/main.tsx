@@ -10,6 +10,7 @@ import { Loading } from "../components/loading.tsx";
 
 const navLinks = [
   { label: "Home", to: "/" },
+  { label: "Blog", to: "/blog" },
 ];
 
 export default function Main() {

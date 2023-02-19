@@ -7,14 +7,17 @@ export default function Index() {
         <title>Home</title>
         <meta
           name="description"
-          content="This is a basic example of a Udibo React App."
+          content="This is a basic example of a Udibo React App using React Query for asyncronous state management."
         />
       </Helmet>
       <h1>Home</h1>
-      <p>This is a basic example of a Udibo React App.</p>
+      <p>
+        This is a basic example of a Udibo React App using React Query for
+        asyncronous state management.
+      </p>
       <ul>
         <li>
-          <a href="https://github.com/udibo/react_app_example">
+          <a href="https://github.com/udibo/react_app_example_react_query">
             GitHub Repository
           </a>
         </li>
