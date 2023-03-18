@@ -1,10 +1,8 @@
 import { useParams } from "npm/react-router-dom";
-import { HttpError } from "x/http_error/mod.ts";
 import { Helmet } from "npm/react-helmet-async";
 import { DefaultErrorFallback } from "x/udibo_react_app/mod.tsx";
 import { FallbackProps } from "x/udibo_react_app/error.tsx";
 import { useQueryErrorResetBoundary } from "npm/@tanstack/react-query";
-import { useEffect } from "npm/react";
 
 import { getPost, parsePostId } from "../../services/posts.tsx";
 
@@ -31,17 +29,4 @@ export default function BlogPost() {
         <h2>Loading...</h2>
       </>
     );
-}
-
-export function ErrorFallback({ error, resetErrorBoundary }: FallbackProps) {
-  const { reset } = useQueryErrorResetBoundary();
-  return (
-    <DefaultErrorFallback
-      error={error}
-      resetErrorBoundary={(...args) => {
-        reset();
-        resetErrorBoundary(...args);
-      }}
-    />
-  );
 }
