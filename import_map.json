@@ -1,7 +1,7 @@
 {
   "imports": {
     "std/": "https://deno.land/std@0.178.0/",
-    "x/udibo_react_app/": "https://deno.land/x/udibo_react_app@0.9.0/",
+    "x/udibo_react_app/": "https://deno.land/x/udibo_react_app@0.9.1/",
     "x/oak/": "https://deno.land/x/oak@v12.0.0/",
     "x/esbuild/": "https://deno.land/x/esbuild@v0.15.10/",
     "x/esbuild_deno_loader/": "https://deno.land/x/esbuild_deno_loader@0.6.0/",
