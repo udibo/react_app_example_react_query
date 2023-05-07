@@ -1,8 +1,5 @@
 import { useParams } from "npm/react-router-dom";
 import { Helmet } from "npm/react-helmet-async";
-import { DefaultErrorFallback } from "x/udibo_react_app/mod.tsx";
-import { FallbackProps } from "x/udibo_react_app/error.tsx";
-import { useQueryErrorResetBoundary } from "npm/@tanstack/react-query";
 
 import { getPost, parsePostId } from "../../services/posts.tsx";
 

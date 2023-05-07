@@ -1,12 +1,12 @@
 {
   "tasks": {
-    "build": "deno run -A --import-map=./import_map.json https://deno.land/x/udibo_react_app@0.9.1/build.ts",
+    "build": "deno run -A --import-map=./import_map.json https://deno.land/x/udibo_react_app@0.10.0/build.ts",
     "run": "deno run -A ./main.tsx",
-    "dev": "export APP_ENTRY_POINT=./main.tsx && deno run -A --import-map=./import_map.json https://deno.land/x/udibo_react_app@0.9.1/dev.ts",
+    "dev": "export APP_ENTRY_POINT=./main.tsx && deno run -A --import-map=./import_map.json https://deno.land/x/udibo_react_app@0.10.0/dev.ts",
     "test": "export APP_ENV=test && deno test -A .",
     "test-watch": "export APP_ENV=test && deno test -A --watch .",
     "check": "deno lint && deno fmt --check",
-    "cache-reload": "deno cache --reload main.tsx && deno cache --reload --import-map=./import_map.json https://deno.land/x/udibo_react_app@0.9.1/dev.ts",
+    "cache-reload": "deno cache --reload main.tsx && deno cache --reload --import-map=./import_map.json https://deno.land/x/udibo_react_app@0.10.0/dev.ts",
     "git-rebase": "git fetch origin main && git rebase --onto origin/main HEAD"
   },
   "compilerOptions": {
@@ -15,14 +15,10 @@
     "jsxImportSource": "npm/react"
   },
   "lint": {
-    "files": {
-      "exclude": ["public/build"]
-    }
+    "exclude": ["public/build"]
   },
   "fmt": {
-    "files": {
-      "exclude": ["public/build"]
-    }
+    "exclude": ["public/build"]
   },
   "importMap": "./import_map.json"
 }
